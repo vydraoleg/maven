@@ -13,6 +13,7 @@
     <modules>
         <module>entity</module>
         <module>dao</module>
+        <module>module</module>
     </modules>
 
     <dependencies>
