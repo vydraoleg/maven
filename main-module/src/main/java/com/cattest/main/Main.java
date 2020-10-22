@@ -12,8 +12,9 @@ public class Main {
 		
 		ICatService catService = new CatService();
 		List<Cat> getCats = catService.getCats();
-		
+
 		getCats.stream()
 				.forEach(System.out::println);
+
 	}
 }
