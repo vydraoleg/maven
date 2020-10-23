@@ -9,11 +9,4 @@
 		<version>0.0.2-SNAPSHOT</version>
 	</parent>
 	<artifactId>api-module</artifactId>
-	<dependencies>
-		<dependency>
-			<groupId>com.moduleMaven</groupId>
-			<artifactId>entity-module</artifactId>
-			<version>0.0.2-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
 </project>

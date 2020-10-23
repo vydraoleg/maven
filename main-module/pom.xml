@@ -10,8 +10,20 @@
   <dependencies>
 		<dependency>
 			<groupId>com.moduleMaven</groupId>
-			<artifactId>service-module</artifactId>
+			<artifactId>util-module</artifactId>
 			<version>0.0.2-SNAPSHOT</version>
 		</dependency>
-	</dependencies>
+      <dependency>
+          <groupId>com.moduleMaven</groupId>
+          <artifactId>api-module</artifactId>
+          <version>0.0.2-SNAPSHOT</version>
+          <scope>compile</scope>
+      </dependency>
+      <dependency>
+          <groupId>com.moduleMaven</groupId>
+          <artifactId>service-module</artifactId>
+          <version>0.0.2-SNAPSHOT</version>
+          <scope>compile</scope>
+      </dependency>
+  </dependencies>
 </project>

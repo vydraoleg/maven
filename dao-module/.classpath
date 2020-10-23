@@ -6,7 +6,6 @@
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="src" path="src/test/resources"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/api-module"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/entity-module"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: mysql:mysql-connector-java:8.0.21"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.google.protobuf:protobuf-java:3.11.4"/>
 	<classpathentry kind="output" path="target/classes"/>

@@ -13,7 +13,8 @@
 		<module>api-module</module>
 		<module>service-module</module>
 		<module>main-module</module>
-	</modules>
+        <module>util-module</module>
+    </modules>
 
 
 	<properties>

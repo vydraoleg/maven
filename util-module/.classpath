@@ -4,7 +4,7 @@
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry kind="src" path="src/test/java"/>
-	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/entity-module"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/api-module"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
