@@ -32,7 +32,8 @@ public class Fight {
                 .stream()
                 .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
                 .collect(toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
-                        LinkedHashMap::new)).entrySet()) {
+                      LinkedHashMap::new))
+                .entrySet()) {
             myList = myList.concat(String.format("Name of winner: %s  Wins: %d \n", x.getKey(), x.getValue()));
         }
 
