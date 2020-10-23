@@ -1,11 +1,10 @@
 package com.fight.main;
 
 
-import com.fight.api.servcies.IAnimalService;
 import com.fight.api.entities.Animal;
+import com.fight.api.servcies.IAnimalService;
 import com.fight.services.AnimalService;
 import com.fight.services.Fight;
-import com.fight.utils.WorkWithFile;
 
 public class Main {
 
@@ -13,13 +12,9 @@ public class Main {
 
         IAnimalService animalService = new AnimalService();
 
-        // Read Animal Fighter from file and add to animalService
-        animalService.getAnimals()
-                .addAll(new WorkWithFile()
-                        .animalFromFile());
-
+        // Read Animal Fighter from DB and add to animalService
+        animalService.readAnimals();
         if (!animalService.getAnimals().isEmpty()) {
-
             // print list of animals from animalService
             animalService.getAnimals()
                     .stream()

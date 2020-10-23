@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface IAnimalService {
 
+    public void readAnimals();
+
     List<Animal> getAnimals();
 
     void addAnimal(Animal animal);

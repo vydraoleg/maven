@@ -9,6 +9,8 @@ import java.util.*;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
+import static java.util.stream.Collectors.toMap;
+
 public class Fight {
 
     Map<String, Integer> winners = new ConcurrentHashMap<>(); // List of winners
@@ -26,15 +28,11 @@ public class Fight {
     private void printWinners(String nameFile) {
         String myList = " ===== List of winners: ===== \n";
 
-        List<Entry<String, Integer>> list = new LinkedList<Entry<String, Integer>>(winners.entrySet());
-        Collections.sort(list, new Comparator<Entry<String, Integer>>() {
-            public int compare(Entry<String, Integer> o1,
-                               Entry<String, Integer> o2) {
-                return o2.getValue().compareTo(o1.getValue());
-            }
-        });
-
-        for (Entry<String, Integer> x : list) {
+        for (Entry<String, Integer> x : winners.entrySet()
+                .stream()
+                .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
+                .collect(toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
+                        LinkedHashMap::new)).entrySet()) {
             myList = myList.concat(String.format("Name of winner: %s  Wins: %d \n", x.getKey(), x.getValue()));
         }
 

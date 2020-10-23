@@ -8,6 +8,7 @@ import com.fight.dao.AnimalDao;
 import com.fight.api.entities.Animal;
 import com.fight.entities.Cat;
 
+import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -15,10 +16,19 @@ import java.util.List;
 
 public class AnimalService implements IAnimalService {
 
-    IAnimalDao animalDao = new AnimalDao();
+    IAnimalDao animalDao ;
     DateTimeFormatter format = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
-
+    @Override
+    public void readAnimals() {
+        animalDao = new AnimalDao();
+        try {
+            animalDao.readAnimals();
+        } catch(SQLException e) {
+            System.out.println("Can not read Animals from DB !");
+        }
+    }
+    @Override
     public List<Animal> getAnimals() {
         return animalDao.getAnimals();
     }
