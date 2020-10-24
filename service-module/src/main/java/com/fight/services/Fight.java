@@ -99,7 +99,7 @@ public class Fight {
 //                fightThread.run();
             }
         }
-        printWinners(".\\winners.txt");
+        printWinners("..\\winners.txt");
     }
 
 }

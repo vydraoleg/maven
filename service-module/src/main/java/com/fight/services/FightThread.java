@@ -143,20 +143,20 @@ public class FightThread implements Runnable {
 // Serialize
             if (flagSaveFighter1 == 0 && strength1 > fighter1.getStrength() && fighter1.getStrength() > 0) {
                 flagSaveFighter1 = 1;
-                new SerializationUtil().serialize(fighter1, ".\\animal1.info");
+                new SerializationUtil().serialize(fighter1, "..\\animal1.info");
             }
             if (flagSaveFighter2 == 0 && strength2 > fighter2.getStrength() && fighter2.getStrength() > 0) {
                 flagSaveFighter2 = 1;
-                new SerializationUtil().serialize(fighter2, ".\\animal2.info");
+                new SerializationUtil().serialize(fighter2, "..\\animal2.info");
             }
 //Deserialize
             if (fighter1.getStrength() <= 0 && flagSaveFighter1 == 1 && Math.random() > 0.5) {
                 flagSaveFighter1 = 2;  // Don't use deserialize again
-                fighter1 = new SerializationUtil().deserialize(".\\animal1.info");
+                fighter1 = new SerializationUtil().deserialize("..\\animal1.info");
             }
             if (fighter2.getStrength() <= 0 && flagSaveFighter2 == 1 && Math.random() > 0.5) {
                 flagSaveFighter2 = 2;
-                fighter2 = new SerializationUtil().deserialize(".\\animal2.info");
+                fighter2 = new SerializationUtil().deserialize("..\\animal2.info");
             }
         }
 // Print winner in current fight
