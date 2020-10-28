@@ -14,6 +14,7 @@ public class Main {
 
         // Read Animal Fighter from DB and add to animalService
         animalService.readAnimals();
+
         if (!animalService.getAnimals().isEmpty()) {
             // print list of animals from animalService
             animalService.getAnimals()
