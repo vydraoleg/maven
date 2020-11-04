@@ -26,6 +26,7 @@ public class Fight {
      * sorting and save into file
      */
     private void printWinners(String nameFile) {
+        new WorkWithFile().saveJSONToFile(winners, nameFile+".json");
         String myList = " ===== List of winners: ===== \n";
 
         for (Entry<String, Integer> x : winners.entrySet()
@@ -38,7 +39,6 @@ public class Fight {
 
         System.out.print(myList);
         new WorkWithFile().saveToFile(myList, nameFile);
-        new WorkWithFile().saveJSONToFile(winners, nameFile+".json");
     }
 
     /**
