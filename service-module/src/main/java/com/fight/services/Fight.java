@@ -38,6 +38,7 @@ public class Fight {
 
         System.out.print(myList);
         new WorkWithFile().saveToFile(myList, nameFile);
+        new WorkWithFile().saveJSONToFile(winners, nameFile+".json");
     }
 
     /**

@@ -4,6 +4,7 @@ package com.fight.utils;
 import com.fight.api.entities.Animal;
 import com.fight.entities.Cat;
 import com.fight.entities.Dog;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,6 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class WorkWithFile {
     private List<Animal> animalList;
@@ -86,6 +88,18 @@ public class WorkWithFile {
         if (fileName.length() > 0) {
             try {
                 Files.write(Paths.get(fileName), list.getBytes());
+            } catch (IOException e) {
+                throw new IllegalStateException("Unexisting file: " + fileName);
+            }
+        }
+    }
+    public void saveJSONToFile(Map<String, Integer> winners, String fileName) {
+
+        if (fileName.length() > 0) {
+            try {
+                JSONObject json = new JSONObject(winners);
+                Files.write(Paths.get(fileName),json.toString().getBytes());
+
             } catch (IOException e) {
                 throw new IllegalStateException("Unexisting file: " + fileName);
             }
