@@ -16,7 +16,6 @@
         <module>util-module</module>
     </modules>
 
-
 	<properties>
 		<lombok.version>1.18.12</lombok.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
