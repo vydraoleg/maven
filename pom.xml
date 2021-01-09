@@ -8,11 +8,11 @@
 	<version>0.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
+		<module>api-module</module>
 		<module>dao-module</module>
 		<module>entity-module</module>
-		<module>api-module</module>
-		<module>service-module</module>
 		<module>main-module</module>
+		<module>service-module</module>
         <module>util-module</module>
     </modules>
 
