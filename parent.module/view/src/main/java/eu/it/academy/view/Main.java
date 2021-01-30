@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("dao");
+        System.out.println(HELLO);
         List<String> list = new ArrayList<>();
         list.add(HELLO);
     }

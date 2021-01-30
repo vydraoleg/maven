@@ -8,4 +8,9 @@
   <artifactId>view</artifactId>
   <name>nview</name>
   <description>desc view</description>
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <apach.common.version>0.0.1-SNAPSHOT</apach.common.version>
+  </properties>
 </project>
