@@ -30,4 +30,5 @@ target
 *.eml
 
 /.metadata
-/.setings
+/.settings
+/.settings/*

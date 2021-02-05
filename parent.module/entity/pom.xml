@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_a15756
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
@@ -8,4 +9,18 @@
   <artifactId>entity</artifactId>
   <name>entity</name>
   <description>Entity module</description>
+=======
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>eu.it.academy</groupId>
+		<artifactId>parent.module</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>entity</artifactId>
+	<name>entity</name>
+	<description>ent</description>
+>>>>>>> .merge_file_a07628
 </project>
