@@ -22,19 +22,10 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 target
-/.idea
+/.idea/*
 /out
 .project
 .classpath
 *.iml
 *.eml
 
-parent.module/.idea/compiler.xml
-parent.module/.idea/misc.xml
-parent.module/.idea/vcs.xml
-parent.module/.idea/workspace.xml
-testing/.idea/compiler.xml
-testing/.idea/encodings.xml
-testing/.idea/misc.xml
-testing/.idea/vcs.xml
-testing/.idea/workspace.xml
