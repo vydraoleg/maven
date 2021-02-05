@@ -1,29 +1,35 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>eu.it.academy</groupId>
-  <artifactId>parent.module</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <name>name1</name>
-  <description>desc1</description>
-  <modules>
-  	<module>dao</module>
-  	<module>service</module>
-  	<module>view</module>
-  	<module>entity</module>
-  </modules>
-  <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <apach.common.version>0.0.1-SNAPSHOT</apach.common.version>
-  </properties>
-  <dependencyManagement>
-<dependencies>
-  	<dependency>
-  	<groupId>eu.it.academy</groupId>
-    <artifactId>entity</artifactId>
-    <version>${apach.common.version}</version>
-  	</dependency>
-  </dependencies>	
-  </dependencyManagement>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>eu.it.academy</groupId>
+	<artifactId>parent.module</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>parentModule</name>
+	<description>Parent moduele</description>
+	<modules>
+		<module>dao</module>
+		<module>service</module>
+		<module>view</module>
+		<module>entity</module>
+		<module>main</module>
+	</modules>
+
+	<properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+		<apach.commos.version>2.2</apach.commos.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>${apach.commos.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 </project>

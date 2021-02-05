@@ -5,7 +5,7 @@
     <artifactId>parent.module</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>entity</artifactId>
-  <name>entity</name>
-  <description>Entity module</description>
+  <artifactId>main</artifactId>
+  <name>main</name>
+  <description>Main module</description>
 </project>
